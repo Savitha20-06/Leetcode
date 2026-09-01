@@ -6,8 +6,6 @@ class Solution
         Stack<Character> s2=new Stack<>();
         char[] c1=s.toCharArray();
         char[] c2=t.toCharArray();
-        String t1="";
-        String t2="";
         for(char c:c1)
         {
             if(c!='#')
@@ -22,9 +20,6 @@ class Solution
             else if(!s2.isEmpty())
             s2.pop();
         }
-        if(s1.equals(s2))
-        return true;
-        else
-        return false;
+        return s1.equals(s2);
     }
 }
